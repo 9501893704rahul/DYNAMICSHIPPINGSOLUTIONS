@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dynamic Shipping Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to content link -->
+    <a href="#content" class="skip-link">Skip to content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="logo.svg" alt="Dynamic Shipping Solutions">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#air-freight">Air Freight</a></li>
+                                <li><a href="#ocean-freight">Ocean Freight</a></li>
+                                <li><a href="#land-transportation">Land Transportation</a></li>
+                                <li><a href="#customs-clearance">Customs Clearance</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="quote.html" class="nav-link cta-button">REQUEST A QUOTE</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close">&times;</button>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="quote.html">REQUEST A QUOTE</a></li>
+                </ul>
+            </nav>
+            <a href="quote.html" class="mobile-cta-button">Get A Quote</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Dynamic Shipping Solutions</h1>
+                        <h2 class="hero-subtitle">Your Global Shipping Partner</h2>
+                    </div>
+                    <div class="hero-cta">
+                        <h3 class="cta-title">Experience Our Instant Freight Rate Search</h3>
+                        <p class="cta-description">Discover and compare freight rates across multiple daily schedules.</p>
+                        <a href="#quote" class="cta-button-primary">Get Quote Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Service</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Air Freight">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">
+                                <a href="#air-freight">AIR FREIGHT</a>
+                            </h3>
+                            <p class="service-description">
+                                The services are provided at the major hubs as well as in some minor airports and can count on a vast network of agents. Consolidated services are provided between the major hubs.
+                            </p>
+                            <a href="#air-freight" class="service-link">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Container Specifications">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">
+                                <a href="#container-specs">CONTAINER SPECIFICATIONS</a>
+                            </h3>
+                            <p class="service-description">
+                                CONTAINER SIZES These details are for guidance only and do not guarantee availability of any type of container for any particular route. Although the dimensions are representative of the in…
+                            </p>
+                            <a href="#container-specs" class="service-link">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Land Transportation">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">
+                                <a href="#land-transportation">LAND TRANSPORTATION</a>
+                            </h3>
+                            <p class="service-description">
+                                A full range of trucking and inter modal services provided by the group companies through selected and qualified sub-contractors i.e. city pick up as well as long distanc…
+                            </p>
+                            <a href="#land-transportation" class="service-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stats-background"></div>
+            <div class="container">
+                <div class="stats-header">
+                    <h2 class="stats-title">Your Queries Our Solutions</h2>
+                    <p class="stats-description">Share your queries with us. Our team will work with you to find the most optimum and Reliable Solution.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 class="stat-number">800+</h3>
+                        <p class="stat-label">Import/Export Transactions</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">1500+</h3>
+                        <p class="stat-label">Containers Moved/ Year</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">105</h3>
+                        <p class="stat-label">Countries Covered</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item active">
+                        <button class="faq-question" aria-expanded="true">
+                            What types of shipping services do you provide?
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer a full range of logistics services including air freight, ocean freight, land transportation, and customs clearance to ensure seamless delivery of your consignments.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Can Dynamic Shipping handle international shipments?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we have a global network operating in over 100 countries, allowing us to handle both imports and exports with ease and efficiency.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you provide door-to-door delivery services?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! We offer complete door-to-door solutions including city pickups and long-distance deliveries using trusted transport partners.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What types of cargo can you transport?
+                        </button>
+                        <div class="faq-answer">
+                            <p>We handle general cargo, refrigerated, ventilated, tank, open top, flat rack, and special containers — ensuring the right container for every cargo type.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How can I track my shipment?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Once your shipment is booked, you will receive a tracking ID with real-time updates, or you can contact our support team for personalized tracking assistance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="Dynamic Shipping Solutions">
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ground Floor, J-56/A/1, Kh No.-12/22, Adhyapak Nagar, Nangloi, New Delhi. Delhi - 110041</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>sales.dynamicshipping@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+917018450267">+91 7018450267</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#air-freight">Air Freight</a></li>
+                        <li><a href="#ocean-freight">Ocean Freight</a></li>
+                        <li><a href="#land-transportation">Land Transportation</a></li>
+                        <li><a href="#customs-clearance">Customs Clearance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="quote.html">REQUEST A QUOTE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

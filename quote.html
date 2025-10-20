@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request A Quote - Dynamic Shipping Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to content link -->
+    <a href="#content" class="skip-link">Skip to content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.svg" alt="Dynamic Shipping Solutions">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html#air-freight">Air Freight</a></li>
+                                <li><a href="index.html#ocean-freight">Ocean Freight</a></li>
+                                <li><a href="index.html#land-transportation">Land Transportation</a></li>
+                                <li><a href="index.html#customs-clearance">Customs Clearance</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="quote.html" class="nav-link cta-button active">REQUEST A QUOTE</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close">&times;</button>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="quote.html">REQUEST A QUOTE</a></li>
+                </ul>
+            </nav>
+            <a href="quote.html" class="mobile-cta-button">Get A Quote</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Get a Quick & Reliable Shipping Quote</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a> > <span>Request A Quote</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Quote Form Section -->
+        <section class="quote-content">
+            <div class="container">
+                <div class="quote-intro">
+                    <p>Looking for a competitive shipping rate? Just fill in the form below with your cargo details, and our team will get back to you shortly with a customized quote.</p>
+                    <p>We handle Air Freight, Ocean Freight, Land Transportation, and Customs Clearance with professionalism and efficiency.</p>
+                </div>
+
+                <form class="quote-form" id="quote-form">
+                    <div class="form-section">
+                        <h2>Personal Information</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone No. *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fax">Fax</label>
+                                <input type="text" id="fax" name="fax">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company *</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="IN">India</option>
+                                    <option value="US">United States</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="FR">France</option>
+                                    <option value="CN">China</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="SG">Singapore</option>
+                                    <option value="AE">UAE</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address *</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Shipment Details</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="commodity">Commodity *</label>
+                                <input type="text" id="commodity" name="commodity" placeholder="e.g., Electronics, Textiles, Machinery" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="weight">Weight of Cargo *</label>
+                                <input type="text" id="weight" name="weight" placeholder="e.g., 500 kg, 2 tons" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dimensions">Dimensions of Cargo *</label>
+                            <input type="text" id="dimensions" name="dimensions" placeholder="Length x Width x Height (in cm or inches)" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="origin">Origin *</label>
+                                <input type="text" id="origin" name="origin" placeholder="City, Country" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="destination">Destination *</label>
+                                <input type="text" id="destination" name="destination" placeholder="City, Country" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="transportation">Mode of Transportation *</label>
+                                <select id="transportation" name="transportation" required>
+                                    <option value="">Select Mode</option>
+                                    <option value="air">Air Freight</option>
+                                    <option value="ocean">Ocean Freight</option>
+                                    <option value="land">Land Transportation</option>
+                                    <option value="multimodal">Multimodal</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="payment">Terms of Payment</label>
+                                <select id="payment" name="payment">
+                                    <option value="">Select Terms</option>
+                                    <option value="prepaid">Prepaid</option>
+                                    <option value="collect">Collect</option>
+                                    <option value="credit">Credit Terms</option>
+                                    <option value="cod">Cash on Delivery</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additional">Additional Requirements</label>
+                            <textarea id="additional" name="additional" rows="4" placeholder="Any special handling requirements, insurance needs, or other details..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-button">Submit Requirements</button>
+                        <p class="form-note">* Required fields. We'll respond within 24 hours with your customized quote.</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <div class="container">
+                <h2>Why Choose Dynamic Shipping Solutions?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Fast Response</h3>
+                        <p>Get your quote within 24 hours</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Competitive Rates</h3>
+                        <p>Best prices in the market</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure Shipping</h3>
+                        <p>Your cargo is safe with us</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Round-the-clock customer service</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="Dynamic Shipping Solutions">
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ground Floor, J-56/A/1, Kh No.-12/22, Adhyapak Nagar, Nangloi, New Delhi. Delhi - 110041</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>sales.dynamicshipping@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+917018450267">+91 7018450267</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#air-freight">Air Freight</a></li>
+                        <li><a href="index.html#ocean-freight">Ocean Freight</a></li>
+                        <li><a href="index.html#land-transportation">Land Transportation</a></li>
+                        <li><a href="index.html#customs-clearance">Customs Clearance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="quote.html">REQUEST A QUOTE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
